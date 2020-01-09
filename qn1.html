@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">    /*starting internal css*/
+body{						/* providing width and align it to center for whole page*/
+	width: 95%;
+	margin: 0px auto;
+}
+ul {
+  list-style-type: none;  /*removing ul style. ul automatically shows bullets so this code removes the bullets*/  
+  margin-top: 20;
+  margin-bottom: 0px;     
+  padding: 0;
+  overflow: hidden; 	/*controls the overflow so it looks good*/    
+  background-color: cyan;
+}
+
+li {
+  float: left;         /*manage nav items in a linear form from left side */
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*removes the poperties of <a> tag like underline */
+}
+
+li a:hover {
+  background-color: grey;
+  color: white;
+}
+#sidepanel{
+	width: 20%;
+	height: 500px;
+	border: 1px solid black;
+	float: left;
+}
+#form{
+	width: 79.6%;
+	height: 500px;
+	border: 1px solid black;
+	float: left;
+}
+form{
+	margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<nav>
+ <ul>				<!--	Listing all the menu items -->
+  <li><a href="#">Home</a></li>   
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Products</a></li>
+  <li><a href="#">Gallery</a></li>
+  <li><a href="#">Blog</a></li>
+</ul>
+</nav>
+
+ <div id="sidepanel">    <!--  Creating side panel and arranging it to left side of page -->
+	<h3 style="text-align: center;">This is sidepanel</h3>
+	</div>
+<div id="form" align="center">			<!-- creating form and align it with side panel -->
+	<form action="">
+		Name: <input type="text" name=""> <br/><br/>
+		Address: <input type="text" name=""> <br/><br/>
+		Phone: <input type="text" name=""> <br/> <br/>
+		Gender: <input type="radio" name="Gender" value="Male"> Male     <!-- Creating radio button for gender field-->
+				<input type="radio" name="Gender" value="Female"> Female <br/> <br/>
+
+				<input type="submit" name="" value="Submit">    <!-- Submit button -->
+
+
+
+
+	</form>
+</div>
+</body>
+</html>
