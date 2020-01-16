@@ -47,6 +47,9 @@ li a:hover {
 form{
 	margin-top: 10px;
 }
+#btn:hover{
+	cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -65,13 +68,27 @@ form{
 	</div>
 <div id="form" align="center">			<!-- creating form and align it with side panel -->
 	<form action="">
-		Name: <input type="text" name=""> <br/><br/>
-		Address: <input type="text" name=""> <br/><br/>
-		Phone: <input type="text" name=""> <br/> <br/>
-		Gender: <input type="radio" name="Gender" value="Male"> Male     <!-- Creating radio button for gender field-->
-				<input type="radio" name="Gender" value="Female"> Female <br/> <br/>
-
-				<input type="submit" name="" value="Submit">    <!-- Submit button -->
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="Gender" value="Male"> Male     <!-- Creating radio button for gender field-->
+				<input type="radio" name="Gender" value="Female"> Female </td>
+			</tr>
+		</table>
+		
+				<input type="submit" name="" value="Submit" id="btn">    <!-- Submit button -->
 
 
 
