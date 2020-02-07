@@ -51,6 +51,20 @@ form{
 	cursor: pointer;
 }
 </style>
+	
+	<!-- Javascript  -->
+
+<script>
+function validateForm() {
+  var x = document.forms["reg"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+
 </head>
 <body>
 <nav>
@@ -67,19 +81,19 @@ form{
 	<h3 style="text-align: center;">This is sidepanel</h3>
 	</div>
 <div id="form" align="center">			<!-- creating form and align it with side panel -->
-	<form action="">
+	<form name="reg" action="" onsubmit="return validateForm()" method="post">
 		<table>
 			<tr>
 				<td>Name</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="fname"></td>
 			</tr>
 			<tr>
 				<td>Address</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="add"></td>
 			</tr>
 			<tr>
 				<td>Phone</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="phn"></td>
 			</tr>
 			<tr>
 				<td>Gender</td>
@@ -89,10 +103,6 @@ form{
 		</table>
 		
 				<input type="submit" name="" value="Submit" id="btn">    <!-- Submit button -->
-
-
-
-
 	</form>
 </div>
 </body>
